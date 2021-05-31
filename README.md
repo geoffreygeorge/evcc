@@ -8,7 +8,8 @@ git clone https://github.com/geoffreygeorge/evcc.git
 
 How to run
 cd evcc
-python consolidate_scores.py
+#python consolidate_scores.py -- deprecated in favor of v2
+python consolidate_scores_v2.py
 
 
 TODO
