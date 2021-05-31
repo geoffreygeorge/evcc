@@ -5,7 +5,7 @@ from classes import battingObj, bowlingObj, fieldingObj
 batting_url = 'https://cricclubs.com/EvergreenValleyCricketClub/allBattingRecords.do?league=all&clubId=20865'
 html_text = requests.get(batting_url).text
 soup = BeautifulSoup(html_text, 'html.parser')
-array_range = 300
+array_range = 50
 
 batting_arr = [ [ None for i in range(18) ] for j in range(array_range) ]
 
