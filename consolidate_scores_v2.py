@@ -177,19 +177,21 @@ for value in player_bowling.values():
     matches = value.get_matches()
     innings = value.get_innings()
     overs = value.get_overs()
-    balls = value.get_balls()
+#    balls = value.get_balls()
 
-    overs = (int)(balls / 6) + float ((balls % 6) / 10)
+#    overs = (int)(balls / 6) + float ((balls % 6) / 10)
     runs = value.get_runs()
     wickets = value.get_wickets()
     average = 0
     if wickets > 0:
         average = runs / wickets
     
-    economy = (runs / balls) * 6
-    strikerate = 0.0
-    if wickets > 0:
-        strikerate = balls / wickets
+#    economy = (runs / balls) * 6
+    economy = value.get_economy()
+#    strikerate = 0.0
+#    if wickets > 0:
+#        strikerate = balls / wickets
+    strikerate = value.get_strikerate()
     hattrick = value.get_hattrick()
     fourwickets = value.get_fourwickets()
     fivewickets = value.get_fivewickets()
