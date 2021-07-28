@@ -97,7 +97,7 @@ for rows in batting_arr:
     if player in player_batting:
         print(player + "duplicate entries")
     else:
-        playerObj = battingObj(int(rows[0]), rows[1], '', int(rows[2]), int(rows[3]), int(rows[4]), int(rows[5]), int(rows[6]), float(rows[7]), float(rows[8]), int(rows[9]),
+        playerObj = battingObj(int(rows[0]), rows[1], '', int(rows[2]), int(rows[3]), int(rows[4]), int(rows[5]), int(rows[6]), rows[7], float(rows[8]), int(rows[9]),
                                 int(rows[10]), int(rows[11]), int(rows[12]), int(rows[13]), int(rows[14]), int(rows[15]), int(rows[16]))
         player_batting[player] = playerObj
 
